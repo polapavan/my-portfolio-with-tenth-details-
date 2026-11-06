@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan Pola | Creative Marketing & Growth Strategist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for Luxury Aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        cream: '#F9F8F6',
+                        charcoal: '#1A1A1A',
+                        taupe: '#8C7A6B',
+                        lightborder: '#E5E0D8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Refined minimalist scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #F9F8F6; }
+        ::-webkit-scrollbar-thumb { background: #D1CFC9; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #8C7A6B; }
+    </style>
+</head>
+<body class="bg-cream text-charcoal font-sans antialiased selection:bg-taupe selection:text-white overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-lightborder transition-all">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl font-semibold tracking-wide text-charcoal">
+                Pavan Pola<span class="text-taupe">.</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-10 text-xs uppercase tracking-widest font-medium text-gray-500">
+                <a href="#stats" class="hover:text-charcoal transition-colors">Impact</a>
+                <a href="#ventures" class="hover:text-charcoal transition-colors">Ventures</a>
+                <a href="#portfolio" class="hover:text-charcoal transition-colors">Portfolio</a>
+                <a href="#experience" class="hover:text-charcoal transition-colors">Experience</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="mailto:pavanpola2003@gmail.com" class="border border-charcoal text-charcoal hover:bg-charcoal hover:text-white font-medium px-6 py-2.5 text-xs uppercase tracking-widest transition-colors duration-300">
+                    Let's Talk
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-btn" aria-label="Toggle Menu" class="md:hidden text-charcoal p-2 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-b border-lightborder px-6 py-8 space-y-6">
+            <a href="#stats" class="mobile-link block text-sm uppercase tracking-widest font-medium text-gray-500 hover:text-charcoal">Impact</a>
+            <a href="#expertise" class="mobile-link block text-sm uppercase tracking-widest font-medium text-gray-500 hover:text-charcoal">Expertise</a>
+            <a href="#ventures" class="mobile-link block text-sm uppercase tracking-widest font-medium text-gray-500 hover:text-charcoal">Ventures</a>
+            <a href="#portfolio" class="mobile-link block text-sm uppercase tracking-widest font-medium text-gray-500 hover:text-charcoal">Portfolio & Work</a>
+            <a href="#experience" class="mobile-link block text-sm uppercase tracking-widest font-medium text-gray-500 hover:text-charcoal">Experience</a>
+            <div class="pt-4">
+                <a href="mailto:pavanpola2003@gmail.com" class="block text-center border border-charcoal text-charcoal hover:bg-charcoal hover:text-white font-medium py-3 text-xs uppercase tracking-widest transition-colors">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-20 md:pt-56 md:pb-32 px-6 max-w-7xl mx-auto relative">
+        <div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-12">
+            <div class="max-w-4xl">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-px bg-taupe"></div>
+                    <span class="text-xs uppercase tracking-widest text-taupe font-medium">Digital Marketing Professional</span>
+                </div>
+                <h1 class="font-serif text-5xl sm:text-6xl md:text-8xl text-charcoal leading-[1.1] mb-6">
+                    Digital Marketing & <br> Demand <span class="italic text-taupe">Generation.</span>
+                </h1>
+            </div>
+            <div class="max-w-sm md:pb-4">
+                <p class="text-sm md:text-base text-gray-600 font-light leading-relaxed mb-8">
+                    Bridging data-driven marketing with targeted demand generation. Specializing in lead generation, campaign reporting, and high-converting digital ecosystems.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="#portfolio" class="group flex items-center gap-3 text-xs uppercase tracking-widest font-medium text-charcoal hover:text-taupe transition-colors">
+                        Explore Work 
+                        <span class="w-8 h-8 rounded-full border border-lightborder flex items-center justify-center group-hover:border-taupe transition-colors"><i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics / Impact Stats Section (Real Estate Style) -->
+    <section id="stats" class="border-y border-lightborder">
+        <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-lightborder [&>*:nth-child(even)]:border-r-0 md:[&>*:nth-child(even)]:border-r">
+            <!-- Stat 1 -->
+            <div class="py-16 px-6 text-center md:text-left flex flex-col items-center md:items-start justify-center border-b md:border-b-0 border-lightborder">
+                <div class="font-serif text-4xl sm:text-5xl md:text-6xl text-charcoal mb-3">170M<span class="text-taupe">+</span></div>
+                <div class="text-[10px] sm:text-xs font-medium text-gray-500 uppercase tracking-[0.2em]">Total Views</div>
+            </div>
+            <!-- Stat 2 -->
+            <div class="py-16 px-6 text-center md:text-left flex flex-col items-center md:items-start justify-center border-b md:border-b-0 border-lightborder">
+                <div class="font-serif text-4xl sm:text-5xl md:text-6xl text-charcoal mb-3">100<span class="text-taupe">+</span></div>
+                <div class="text-[10px] sm:text-xs font-medium text-gray-500 uppercase tracking-[0.2em]">Customer Base</div>
+            </div>
+            <!-- Stat 3 -->
+            <div class="py-16 px-6 text-center md:text-left flex flex-col items-center md:items-start justify-center">
+                <div class="font-serif text-4xl sm:text-5xl md:text-6xl text-charcoal mb-3">5<span class="text-taupe">+</span></div>
+                <div class="text-[10px] sm:text-xs font-medium text-gray-500 uppercase tracking-[0.2em]">Countries Reached</div>
+            </div>
+            <!-- Stat 4 -->
+            <div class="py-16 px-6 text-center md:text-left flex flex-col items-center md:items-start justify-center">
+                <div class="font-serif text-4xl sm:text-5xl md:text-6xl text-charcoal mb-3">8.5M<span class="text-taupe">+</span></div>
+                <div class="text-[10px] sm:text-xs font-medium text-gray-500 uppercase tracking-[0.2em]">Revenue / Company</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise / Image Overlays Section (Lumera Style) -->
+    <section id="expertise" class="py-24 md:py-32 px-6 max-w-7xl mx-auto border-b border-lightborder">
+        <div class="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <div>
+                <span class="text-xs uppercase tracking-[0.2em] text-taupe font-medium block mb-4">Core Competencies</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-charcoal">Performance Marketing.</h2>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1: Meta Ads -->
+            <div class="group relative aspect-[3/4] overflow-hidden bg-charcoal">
+                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop" alt="Meta Ads" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 group-hover:opacity-80 transition-all duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-8">
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe block mb-2 font-medium">Reach & Acquisition</span>
+                    <h3 class="font-serif text-2xl text-white mb-3">Meta Ads & Social Growth</h3>
+                    <p class="text-gray-300 text-sm font-light leading-relaxed">
+                        Driving high-volume reach, targeted impressions, and sustainable user acquisition across social ecosystems.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2: Google Ads -->
+            <div class="group relative aspect-[3/4] overflow-hidden bg-charcoal">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" alt="Google Ads" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 group-hover:opacity-80 transition-all duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-8">
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe block mb-2 font-medium">ROI & Analytics</span>
+                    <h3 class="font-serif text-2xl text-white mb-3">Google Ads & Intent Capture</h3>
+                    <p class="text-gray-300 text-sm font-light leading-relaxed">
+                        Capturing high-intent search traffic, optimizing for strict ROI targets, and delivering deep campaign reporting.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3: LinkedIn Ads -->
+            <div class="group relative aspect-[3/4] overflow-hidden bg-charcoal">
+                <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=1000&auto=format&fit=crop" alt="LinkedIn Ads" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 group-hover:opacity-80 transition-all duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-8">
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe block mb-2 font-medium">B2B Pipelines</span>
+                    <h3 class="font-serif text-2xl text-white mb-3">LinkedIn & B2B Demand Gen</h3>
+                    <p class="text-gray-300 text-sm font-light leading-relaxed">
+                        Executing precision lead generation and automated email campaigns to build robust B2B sales pipelines.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Own Ventures Section (Editorial List) -->
+    <section id="ventures" class="py-24 md:py-32 px-6 max-w-7xl mx-auto">
+        <div class="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <div>
+                <span class="text-xs uppercase tracking-[0.2em] text-taupe font-medium block mb-4">Entrepreneurship</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-charcoal">Exclusive Ventures.</h2>
+            </div>
+            <p class="text-gray-500 font-light text-sm max-w-sm">
+                Founding and scaling independent properties driven by AI data, targeted marketing, and elevated branding.
+            </p>
+        </div>
+
+        <div class="border-t border-lightborder">
+            <!-- Venture 01 -->
+            <div class="flex flex-col md:flex-row py-10 border-b border-lightborder group hover:bg-white/40 transition-colors duration-500">
+                <div class="md:w-1/6 mb-4 md:mb-0 pt-2">
+                    <span class="text-taupe font-serif text-2xl italic">01</span>
+                </div>
+                <div class="md:w-1/3 mb-4 md:mb-0 pr-8 flex flex-col justify-center">
+                    <h3 class="font-serif text-3xl text-charcoal mb-2 group-hover:text-taupe transition-colors">ConCatch</h3>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-gray-500 block">AI-Driven Lead Gen</span>
+                </div>
+                <div class="md:w-1/3 text-sm text-gray-600 font-light leading-relaxed mb-6 md:mb-0 pr-8 flex items-center">
+                    Connecting healthcare organizations with professionals, generating [X,XXX]+ targeted leads with a [X]% conversion rate.
+                </div>
+                <div class="md:w-1/6 flex items-center justify-start md:justify-end">
+                    <a href="https://share.google/ENyrfl0tGjJ15Sc6v" target="_blank" class="w-12 h-12 rounded-full border border-lightborder flex items-center justify-center text-charcoal group-hover:bg-charcoal group-hover:text-cream group-hover:border-charcoal transition-all duration-300">
+                        <i class="fa-solid fa-arrow-right text-sm transform -rotate-45 group-hover:rotate-0 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Venture 02 -->
+            <div class="flex flex-col md:flex-row py-10 border-b border-lightborder group hover:bg-white/40 transition-colors duration-500">
+                <div class="md:w-1/6 mb-4 md:mb-0 pt-2">
+                    <span class="text-taupe font-serif text-2xl italic">02</span>
+                </div>
+                <div class="md:w-1/3 mb-4 md:mb-0 pr-8 flex flex-col justify-center">
+                    <h3 class="font-serif text-3xl text-charcoal mb-2 group-hover:text-taupe transition-colors">Blak Box</h3>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-gray-500 block">Creative Agency</span>
+                </div>
+                <div class="md:w-1/3 text-sm text-gray-600 font-light leading-relaxed mb-6 md:mb-0 pr-8 flex items-center">
+                    Delivered high-converting digital marketing assets resulting in a [X]% increase in client engagement metrics.
+                </div>
+                <div class="md:w-1/6 flex items-center justify-start md:justify-end">
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-gray-400">Internal Property</span>
+                </div>
+            </div>
+
+            <!-- Venture 03 -->
+            <div class="flex flex-col md:flex-row py-10 border-b border-lightborder group hover:bg-white/40 transition-colors duration-500">
+                <div class="md:w-1/6 mb-4 md:mb-0 pt-2">
+                    <span class="text-taupe font-serif text-2xl italic">03</span>
+                </div>
+                <div class="md:w-1/3 mb-4 md:mb-0 pr-8 flex flex-col justify-center">
+                    <h3 class="font-serif text-3xl text-charcoal mb-2 group-hover:text-taupe transition-colors">Sri Sai Foods</h3>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-gray-500 block">Food & Beverage</span>
+                </div>
+                <div class="md:w-1/3 text-sm text-gray-600 font-light leading-relaxed mb-6 md:mb-0 pr-8 flex items-center">
+                    Executed targeted promotional campaigns leading to [X,XXX]+ user sign-ups and rapid market penetration.
+                </div>
+                <div class="md:w-1/6 flex items-center justify-start md:justify-end">
+                    <a href="https://www.instagram.com/srisaifoodsoffcial/" target="_blank" class="w-12 h-12 rounded-full border border-lightborder flex items-center justify-center text-charcoal group-hover:bg-charcoal group-hover:text-cream group-hover:border-charcoal transition-all duration-300">
+                        <i class="fa-solid fa-arrow-right text-sm transform -rotate-45 group-hover:rotate-0 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Links Section (Grid Layout) -->
+    <section id="portfolio" class="py-24 bg-white border-y border-lightborder px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 md:mb-24">
+                <span class="text-xs uppercase tracking-[0.2em] text-taupe font-medium block mb-4">Curated Archives</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-charcoal">Featured Portfolio.</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+                <!-- Portfolio Item -->
+                <a href="https://drive.google.com/drive/folders/1hJLS63D4fvJyEGvOx2AW-lbhuUXH3FCE" target="_blank" class="block group">
+                    <div class="aspect-[4/3] bg-cream border border-lightborder flex items-center justify-center mb-6 group-hover:border-taupe transition-colors duration-500 relative overflow-hidden">
+                        <i class="fa-brands fa-google-drive text-4xl text-lightborder group-hover:text-taupe group-hover:scale-110 transition-all duration-500"></i>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe block mb-2">Design Asset Hub</span>
+                    <h4 class="font-serif text-2xl text-charcoal flex justify-between items-center">
+                        Creative Projects
+                        <i class="fa-solid fa-arrow-right text-sm opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                    </h4>
+                </a>
+
+                <!-- Portfolio Item -->
+                <a href="https://www.instagram.com/360_marketing_concepts/reels/" target="_blank" class="block group">
+                    <div class="aspect-[4/3] bg-cream border border-lightborder flex items-center justify-center mb-6 group-hover:border-taupe transition-colors duration-500 relative overflow-hidden">
+                        <i class="fa-brands fa-instagram text-4xl text-lightborder group-hover:text-taupe group-hover:scale-110 transition-all duration-500"></i>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe block mb-2">Marketing Agency</span>
+                    <h4 class="font-serif text-2xl text-charcoal flex justify-between items-center">
+                        360 Marketing Concepts
+                        <i class="fa-solid fa-arrow-right text-sm opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                    </h4>
+                </a>
+
+                <!-- Portfolio Item -->
+                <a href="https://www.instagram.com/thekapturecrew_?srtk=ZjJ3b29jdXU4bjBr" target="_blank" class="block group">
+                    <div class="aspect-[4/3] bg-cream border border-lightborder flex items-center justify-center mb-6 group-hover:border-taupe transition-colors duration-500 relative overflow-hidden">
+                        <i class="fa-brands fa-instagram text-4xl text-lightborder group-hover:text-taupe group-hover:scale-110 transition-all duration-500"></i>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe block mb-2">Media & Content</span>
+                    <h4 class="font-serif text-2xl text-charcoal flex justify-between items-center">
+                        The Kapture Crew
+                        <i class="fa-solid fa-arrow-right text-sm opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                    </h4>
+                </a>
+
+                <!-- Portfolio Item -->
+                <a href="https://www.instagram.com/nidhya_academy?stkn=MW50bDJheWU1MnFsdQ==" target="_blank" class="block group">
+                    <div class="aspect-[4/3] bg-cream border border-lightborder flex items-center justify-center mb-6 group-hover:border-taupe transition-colors duration-500 relative overflow-hidden">
+                        <i class="fa-brands fa-instagram text-4xl text-lightborder group-hover:text-taupe group-hover:scale-110 transition-all duration-500"></i>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe block mb-2">Healthcare Education</span>
+                    <h4 class="font-serif text-2xl text-charcoal flex justify-between items-center">
+                        Nidhya Academy
+                        <i class="fa-solid fa-arrow-right text-sm opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                    </h4>
+                </a>
+
+                <!-- Portfolio Item -->
+                <a href="https://share.google/c8KWsY1hDq0hmdZqQ" target="_blank" class="block group">
+                    <div class="aspect-[4/3] bg-cream border border-lightborder flex items-center justify-center mb-6 group-hover:border-taupe transition-colors duration-500 relative overflow-hidden">
+                        <i class="fa-solid fa-globe text-4xl text-lightborder group-hover:text-taupe group-hover:scale-110 transition-all duration-500"></i>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe block mb-2">Web Platform</span>
+                    <h4 class="font-serif text-2xl text-charcoal flex justify-between items-center">
+                        Nidhya Medical Platform
+                        <i class="fa-solid fa-arrow-right text-sm opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                    </h4>
+                </a>
+
+                <!-- Portfolio Item -->
+                <a href="https://share.google/rcrZ2seHGfUtbZEWr" target="_blank" class="block group">
+                    <div class="aspect-[4/3] bg-cream border border-lightborder flex items-center justify-center mb-6 group-hover:border-taupe transition-colors duration-500 relative overflow-hidden">
+                        <i class="fa-solid fa-mobile-screen-button text-4xl text-lightborder group-hover:text-taupe group-hover:scale-110 transition-all duration-500"></i>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe block mb-2">Mobile Application</span>
+                    <h4 class="font-serif text-2xl text-charcoal flex justify-between items-center">
+                        Nidhya Nursing App
+                        <i class="fa-solid fa-arrow-right text-sm opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                    </h4>
+                </a>
+                
+                <!-- Portfolio Item -->
+                <a href="https://www.instagram.com/aroha_living_design?stkn=OWF2ODUwYnE2eGhh" target="_blank" class="block group">
+                    <div class="aspect-[4/3] bg-cream border border-lightborder flex items-center justify-center mb-6 group-hover:border-taupe transition-colors duration-500 relative overflow-hidden">
+                        <i class="fa-brands fa-instagram text-4xl text-lightborder group-hover:text-taupe group-hover:scale-110 transition-all duration-500"></i>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe block mb-2">Interior & Living</span>
+                    <h4 class="font-serif text-2xl text-charcoal flex justify-between items-center">
+                        Aroha Living Design
+                        <i class="fa-solid fa-arrow-right text-sm opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                    </h4>
+                </a>
+
+                <!-- Portfolio Item -->
+                <a href="https://share.google/NmQLwQwJleEsHd2hx" target="_blank" class="block group">
+                    <div class="aspect-[4/3] bg-cream border border-lightborder flex items-center justify-center mb-6 group-hover:border-taupe transition-colors duration-500 relative overflow-hidden">
+                        <i class="fa-solid fa-globe text-4xl text-lightborder group-hover:text-taupe group-hover:scale-110 transition-all duration-500"></i>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe block mb-2">Healthcare Jobs Platform</span>
+                    <h4 class="font-serif text-2xl text-charcoal flex justify-between items-center">
+                        Clino Job Platform
+                        <i class="fa-solid fa-arrow-right text-sm opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                    </h4>
+                </a>
+
+                 <!-- Portfolio Item -->
+                 <a href="https://www.instagram.com/clinojob_official?stkn=Ym5zenJhbjdoY294" target="_blank" class="block group">
+                    <div class="aspect-[4/3] bg-cream border border-lightborder flex items-center justify-center mb-6 group-hover:border-taupe transition-colors duration-500 relative overflow-hidden">
+                        <i class="fa-brands fa-instagram text-4xl text-lightborder group-hover:text-taupe group-hover:scale-110 transition-all duration-500"></i>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe block mb-2">Social Media</span>
+                    <h4 class="font-serif text-2xl text-charcoal flex justify-between items-center">
+                        ClinoJob Official
+                        <i class="fa-solid fa-arrow-right text-sm opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                    </h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="py-24 md:py-32 px-6 max-w-4xl mx-auto border-b border-lightborder">
+        <div class="text-center mb-16 md:mb-24">
+            <span class="text-xs uppercase tracking-[0.2em] text-taupe font-medium block mb-4">Career Track</span>
+            <h2 class="font-serif text-4xl md:text-5xl text-charcoal">Professional History.</h2>
+        </div>
+        
+        <div class="space-y-12">
+            <!-- Job 1 -->
+            <div class="border-b border-lightborder pb-12">
+                <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4 gap-2">
+                    <h3 class="font-serif text-2xl md:text-3xl text-charcoal">Demand Generation & Marketing Strategist</h3>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe font-medium">Jan 2026 — Present</span>
+                </div>
+                <h4 class="text-sm uppercase tracking-widest text-gray-500 mb-6">Nidhya Medical Academy • Hyderabad, India</h4>
+                <p class="text-gray-600 font-light text-sm md:text-base leading-relaxed mb-4">
+                    Spearheading demand generation and lead generation initiatives for a specialized healthcare employment platform. Implemented structured campaign reporting to optimize spend and track multi-channel performance.
+                </p>
+                <ul class="list-disc list-inside text-sm text-gray-600 font-light space-y-2">
+                    <li>Drove <span class="font-medium text-charcoal">[X,XXX]+</span> verified user sign-ups within the first <span class="font-medium text-charcoal">[X]</span> months.</li>
+                    <li>Designed and monitored <span class="font-medium text-charcoal">[X]+</span> cross-platform lead generation campaigns targeting private healthcare seekers.</li>
+                </ul>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="pb-6">
+                <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4 gap-2">
+                    <h3 class="font-serif text-2xl md:text-3xl text-charcoal">Digital Marketing Specialist</h3>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-taupe font-medium">Oct 2023 — Jan 2026</span>
+                </div>
+                <h4 class="text-sm uppercase tracking-widest text-gray-500 mb-6">Globo Persona • Hyderabad, India</h4>
+                <p class="text-gray-600 font-light text-sm md:text-base leading-relaxed mb-4">
+                    Managed end-to-end B2B marketing pipelines, utilizing LinkedIn and sophisticated email campaigns to drive engagement and secure high-value client meetings.
+                </p>
+                <ul class="list-disc list-inside text-sm text-gray-600 font-light space-y-2">
+                    <li>Generated a cumulative reach of <span class="font-medium text-charcoal">170M+</span> across targeted digital assets and campaigns.</li>
+                    <li>Executed <span class="font-medium text-charcoal">[X]+</span> personalized email campaigns resulting in a <span class="font-medium text-charcoal">[X]%</span> increase in qualified B2B leads.</li>
+                    <li>Grew professional following by <span class="font-medium text-charcoal">[X,XXX]+</span> engaged followers through consistent LinkedIn content strategies.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Tools Section -->
+    <section class="py-24 md:py-32 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8">
+            
+            <!-- Education -->
+            <div>
+                <span class="text-xs uppercase tracking-[0.2em] text-taupe font-medium block mb-8">Academic Foundation</span>
+                <div class="space-y-8">
+                    <div class="border-l border-taupe pl-6 relative">
+                        <div class="absolute w-2 h-2 bg-taupe rounded-full -left-[4.5px] top-2"></div>
+                        <h4 class="font-serif text-xl text-charcoal mb-1">B.Tech (Electrical & Electronics)</h4>
+                        <p class="text-sm uppercase tracking-widest text-gray-500 mb-2">MLRIT, Hyderabad • 2025</p>
+                        <p class="text-sm text-gray-600 font-light">Graduating Score: 7.2%</p>
+                    </div>
+                    <div class="border-l border-lightborder pl-6 relative">
+                        <div class="absolute w-2 h-2 bg-lightborder rounded-full -left-[4.5px] top-2"></div>
+                        <h4 class="font-serif text-xl text-charcoal mb-1">Intermediate</h4>
+                        <p class="text-sm uppercase tracking-widest text-gray-500 mb-2">Completed • 2021</p>
+                    </div>
+                    <div class="border-l border-lightborder pl-6 relative">
+                        <div class="absolute w-2 h-2 bg-lightborder rounded-full -left-[4.5px] top-2"></div>
+                        <h4 class="font-serif text-xl text-charcoal mb-1">10th Standard (SSC)</h4>
+                        <p class="text-sm uppercase tracking-widest text-gray-500">Completed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack / Tools -->
+            <div>
+                <span class="text-xs uppercase tracking-[0.2em] text-taupe font-medium block mb-8">Systems & Tooling</span>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="border border-lightborder p-4 flex items-center justify-center gap-3 text-sm text-charcoal font-medium hover:border-taupe transition-colors duration-300">
+                        <i class="fa-solid fa-chart-line text-taupe"></i> Zoho CRM
+                    </div>
+                    <div class="border border-lightborder p-4 flex items-center justify-center gap-3 text-sm text-charcoal font-medium hover:border-taupe transition-colors duration-300">
+                        <i class="fa-brands fa-linkedin text-taupe"></i> LinkedIn
+                    </div>
+                    <div class="border border-lightborder p-4 flex items-center justify-center gap-3 text-sm text-charcoal font-medium hover:border-taupe transition-colors duration-300">
+                        <i class="fa-solid fa-bolt text-taupe"></i> Make.com
+                    </div>
+                    <div class="border border-lightborder p-4 flex items-center justify-center gap-3 text-sm text-charcoal font-medium hover:border-taupe transition-colors duration-300">
+                        <i class="fa-solid fa-brain text-taupe"></i> Claude AI
+                    </div>
+                    <div class="border border-lightborder p-4 flex items-center justify-center gap-3 text-sm text-charcoal font-medium hover:border-taupe transition-colors duration-300">
+                        <i class="fa-brands fa-figma text-taupe"></i> Figma
+                    </div>
+                    <div class="border border-lightborder p-4 flex items-center justify-center gap-3 text-sm text-charcoal font-medium hover:border-taupe transition-colors duration-300">
+                        <i class="fa-solid fa-pen-nib text-taupe"></i> Adobe Suite
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-lightborder bg-white py-16 px-6 text-center">
+        <a href="#" class="font-serif text-3xl font-semibold tracking-wide text-charcoal block mb-8">
+            Pavan Pola<span class="text-taupe">.</span>
+        </a>
+        <div class="flex items-center justify-center gap-6 mb-12">
+            <a href="https://linkedin.com/in/pavanpola/" target="_blank" class="text-gray-400 hover:text-charcoal transition-colors">
+                <i class="fa-brands fa-linkedin text-xl"></i>
+            </a>
+            <a href="mailto:pavanpola2003@gmail.com" class="text-gray-400 hover:text-charcoal transition-colors">
+                <i class="fa-solid fa-envelope text-xl"></i>
+            </a>
+        </div>
+        <p class="text-xs uppercase tracking-[0.2em] text-gray-400 font-medium">
+            © 2026 Pavan Pola. Exclusively Crafted.
+        </p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
